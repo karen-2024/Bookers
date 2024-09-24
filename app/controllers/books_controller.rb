@@ -20,6 +20,9 @@ class BooksController < ApplicationController
   def edit
   end
 
+  def destroy
+  end
+
   #ストロングパラメータ
   private
   def book_params

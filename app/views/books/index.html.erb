@@ -2,20 +2,23 @@
 
 <% @books.each do |book| %>
 
-  <p><strong>Title</strong></p>
+
+  <strong>Title</strong>
   <span><%= book.title %></span>
 
 
-  <p><strong>Body</strong></p>
+  <strong>Body</strong>
   <span><%= book.body %></span>
 
 
-  <p><a href= "">Show</a></p>
 
-  <p><a href= "">Edit</a></p>
+  <span><%= link_to "Show", book_path(book.id) %></span>
 
-  <p><a href= "">Destroy</a></p>
+  <span><%= link_to "Edit", edit_book_path(book.id) %></span>
 
+  <span><%= link_to "Destroy", book_path(book.id) %></span>
+
+  <br>
 
 <% end %>
 
