@@ -13,3 +13,56 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: verdana, arial, helvetica, sans-serif;
+  width: 1000px;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/*TOP画面*/
+.bookers-top p {
+  margin: 33px;
+}
+
+h1, h2 {
+  margin: 15px 0;
+}
+
+
+/*一覧画面*/
+.index {
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+th {
+  padding-bottom: 5px;
+}
+
+td {
+  padding: 0 5px 7px;
+}
+
+
+/*入力*/
+.text {
+  margin-bottom: 10px;
+}
+
+.action {
+  margin-bottom: 10px;
+}
+
+
+/*詳細画面*/
+.show p {
+  margin: 33px;
+}
