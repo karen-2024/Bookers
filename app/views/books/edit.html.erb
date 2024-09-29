@@ -3,7 +3,7 @@
 <!--エラー-->
 <div class= "error">
   <% if @book.errors.any? %>
-    <%= @book.errors.count %> error prohibited this book from being saved:
+    <h2><%= @book.errors.count %> error prohibited this book from being saved:</h2>
     <ul>
       <% @book.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -28,6 +28,7 @@
     <%= f.submit 'Update Book' %>
   </div>
 
+<!--成功-->
   <div class= "successfully" >
     <% flash.each do |message_type, message| %>
       <div class="flash-message <%= message_type %>"><%= message %></div>

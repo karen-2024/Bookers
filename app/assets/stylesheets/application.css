@@ -73,6 +73,21 @@ td {
 
 .error {
   width: 400px;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  background-color: #dddddd;
   border: 2px solid red;
-  
+}
+
+.error h2{
+  font-size: 10px;
+  color: white;
+  background-color: #d52f25;
+  margin-top: 0;
+  padding: 5px 5px 5px 15px;
+}
+
+.error ul {
+  list-style: square;
+  margin: 33px;
 }
