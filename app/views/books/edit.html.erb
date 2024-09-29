@@ -1,5 +1,17 @@
 <h1>Editing Book</h1>
 
+<!--エラー-->
+<div class= "error">
+  <% if @book.errors.any? %>
+    <%= @book.errors.count %> error prohibited this book from being saved:
+    <ul>
+      <% @book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+</div>
+
 <%= form_with model: @book do |f| %>
 
   <div class= "text">
@@ -16,11 +28,11 @@
     <%= f.submit 'Update Book' %>
   </div>
 
-  <main>
+  <div class= "successfully" >
     <% flash.each do |message_type, message| %>
       <div class="flash-message <%= message_type %>"><%= message %></div>
     <% end %>
-  </main>
+  </div>
 
 <% end %>
 

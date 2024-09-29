@@ -12,12 +12,12 @@
 
   <body>
 
-    <main>
+    <div class= "successfully">
       <% flash.each do |message_type, message| %>
         <div class="flash-message <%= message_type %>"><%= message %></div>
       <% end %>
-      <%= yield %>
-    </main>
+    </div>
+    <%= yield %>
 
   </body>
 

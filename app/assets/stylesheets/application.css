@@ -66,3 +66,13 @@ td {
 .show p {
   margin: 33px;
 }
+
+.successfully {
+  color: green;
+}
+
+.error {
+  width: 400px;
+  border: 2px solid red;
+  
+}
