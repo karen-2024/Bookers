@@ -16,6 +16,12 @@
     <%= f.submit 'Update Book' %>
   </div>
 
+  <main>
+    <% flash.each do |message_type, message| %>
+      <div class="flash-message <%= message_type %>"><%= message %></div>
+    <% end %>
+  </main>
+
 <% end %>
 
 <%= link_to "Show", book_path %> |
